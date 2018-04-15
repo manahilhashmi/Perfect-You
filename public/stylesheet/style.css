@@ -26,12 +26,12 @@
 
 
 body {
-  font-family:Questrial;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #828282;
-  background: #fff;
+  font-family:Questrial !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  line-height: 1.7 !important;
+  color: #828282 !important;
+  background: #fff !important;
 }
 
 #page {
@@ -126,7 +126,7 @@ body {
 }
 
 
-#logbutton{
+#logbutton, #slide1, #slide2, #beginbut{
   font-family: Comfortaa-Bold;
   background-color:white;
   color:#FF7A01;
@@ -135,6 +135,21 @@ body {
 }
 
 #logbutton:hover{
+  background-color: #FF7A01;
+  color:white;
+}
+
+#slide1:hover{
+  background-color: #FF7A01;
+  color:white;
+}
+
+#slide2:hover{
+background-color: #FF7A01;
+  color:white;
+}
+
+#beginbut:hover{
   background-color: #FF7A01;
   color:white;
 }
@@ -516,7 +531,7 @@ font-weight: bold;
 /* -------------------------LOG PAGE CSS -------------------------*/
 
 .home-intro {
-  background-image: url('../image/back2.jpg');
+  background-image: url('image/back2.jpg');
   background-size: cover;
   height:100vh;
   width: 100%;
@@ -663,7 +678,7 @@ font-weight: bold;
   display: inline-block;  
 }
 #example-one a { 
-  color:#808080; 
+  color:black; 
   font-size: 16px; 
   float: left;
   padding: 6px 25px 4px 25px;
@@ -780,6 +795,163 @@ font-weight: bold;
   height: 50%;
 }
 
+#slide1{
+  float:left;
+  margin-left: 50px;
+  margin-top:150px;
+}
+
+#slide2{
+  float:right;
+  margin-top: 150px;
+  margin-right: 50px;
+}
+
+#fill{
+  background-color:#000080 ;
+  border:solid 1px #808080;
+}
+
+.mySlides p{
+  text-align: center !important;
+  font-size:18px;
+  margin-bottom: 22px;
+}
+
+#prog{
+  float:right;
+  display:inline-block;
+  margin-top:-8px;
+  margin-right: 20px;
+}
+
+#options .btn{
+  background-color:transparent;
+  border:solid 2px #f0f0f0;
+  color:black;
+
+}
+
+#options .btn:hover{
+  background-color: #ff7a01;
+  color:white;
+  border: solid 1px white;
+}
+/*
+.active {
+  background-color: #ff7a01;
+  color:white;
+}
+*/
+
+#tool ul li{
+  text-decoration: none;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.mySlides{
+   animation-duration: 1.5s;
+   transition-delay: 1s;
+}
+
+#innerscore{
+  margin-left:20px;
+  margin-top: 12px;
+}
+
+#innerscore .col-xs-5{
+  display: block;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding:10px;
+  padding-left:20px;
+}
+
+
+#scoreLeft{
+  vertical-align: left;
+  float:left;
+
+}
+
+#scoreRight{
+  float:right;
+}
+
+#innerscore h4{
+  display:inline;
+}
+
+/*
+.btn-purple{
+  background-color:#8e24aa!important;
+  color:#fff!important
+  }
+.btn-purple:hover{
+  background-color:#a028bf
+}
+.btn-purple.active,.btn-purple:active,.btn-purple:focus{
+  background-color:#481256
+}
+.btn-purple:not([disabled]):not(.disabled).active,.btn-purple:not([disabled]):not(.disabled):active,.show>.btn-purple.dropdown-toggle{
+  background-color:#481256!important
+}
+
+.purple-ic{
+  color:#8e24aa!important
+}
+.purple-ic:focus,.purple-ic:hover{
+  color:#8e24aa
+}.btn-outline-purple{
+
+  border:2px solid #8e24aa!important;background-color:transparent!important;color:#8e24aa!important
+
+}
+
+.btn-outline-purple.active,.btn-outline-purple:active,.btn-outline-purple:active:focus,.btn-outline-purple:focus,.btn-outline-purple:hover{
+  border-color:#8e24aa!important;background-color:transparent!important;color:#8e24aa!important
+}
+
+
+/*
+.btn-purple {
+    background-color: #8e24aa!important;
+    color: #fff!important;
+}
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 1;
+}
+
+
+
+
+/*
+.myslides{
+  width: 100%;
+  display: block;
+  vertical-align: middle;
+}
+/*
+.w3-button{
+  border:none;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  padding: 8px 16px;
+  text-align: center;
+  white-space: nowrap;
+}
 
 /*
 

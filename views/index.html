@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css"> 
-    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="js/modernizr-2.6.2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 
     <!-- <link rel="shortcut icon" href="images/icon-dark.ico" /> -->
 
@@ -156,11 +157,11 @@
                          <div class="col-xs-1"></div>
                             <div class="col-xs-6">
                             <h4>Fatima K.</h4>
-                            <h5>"I struggled, I fought, I survived..."</h5>
+                            <h5>"My friends abondoned me."</h5>
                             <p> I did not know that I was facing a challenge. I did not know that they name my condition. Everyone just thought that I am dieting. My parents used to scold me. I had no friends left because all of them thought that I have gone crazy. I wanted to stop but I could not.<br><br>One day my mother took me to a family doctor. That's when my life began to change. He discussed my eating routines with me. He assured me that eating won't make me fat.</p>
                             </div>
                             <div class="col-xs-4">
-                                <img src='image/story1.jpg' id="landingImg"/>
+                                <img src='image/story2.jpg' id="landingImg" style="margin-top: 0px;" />
                             </div>
                       </div>
                     
@@ -249,80 +250,5 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </body>
 
-     <script type="text/javascript">
-$(document).ready(function(){
-    console.log('here')
-    $('.counter').each(function() {
-      var $this = $(this),
-          countTo = $this.attr('data-count');
-      $({ countNum: $this.text()}).animate({
-        countNum: countTo
-      },
 
-      {
-
-        duration: 10000,
-        easing:'linear',
-        step: function() {
-          $this.text(Math.floor(this.countNum));
-        },
-        complete: function() {
-          $this.text(this.countNum);
-          //alert('finished');
-        }
-
-      });  
-    });
-    $(function(){
-    $('#logbutton').click(function(){
-        window.location='log.html'
-    });
-    });
-     $(function(){
-    $('#bannerButton').click(function(){
-        window.location='log.html'
-    });
-    });
-    $(function(){
-    $('#signBt').click(function(){
-        window.location='log.html'
-    });
-    });
-    
-  function isElementInViewport(elem) {
-    var $elem = $(elem);
-
-    // Get the scroll position of the page.
-    var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
-    var viewportTop = $(scrollElem).scrollTop();
-    var viewportBottom = viewportTop + $(window).height();
-
-    // Get the position of the element on the page.
-    var elemTop = Math.round( $elem.offset().top );
-    var elemBottom = elemTop + $elem.height();
-
-    return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
-}
-
-// Check if it's time to start the animation.
-function checkAnimation() {
-    var $elem = $('.chart span');
-
-    // If the animation has already been started
-    if ($elem.hasClass('start')) return;
-
-    if (isElementInViewport($elem)) {
-        // Start the animation
-        $elem.addClass('start');
-    }
-}
-
-// Capture scroll events
-$(window).scroll(function(){
-    checkAnimation();
-});
-
-})
-    </script>
-    
     </html>
