@@ -59,6 +59,18 @@ app.get('/log.html',(req,res)=>{
 app.get('/home',(req,res)=>{
     res.render('home',{user:req.user});
 });
+app.get('/tool.html',(req,res)=>{
+    res.render('tool',{user:req.user});
+});
+app.get('/score.html',(req,res)=>{
+    res.render('score',{user:req.user});
+});
+app.get('/toolEnd.html',(req,res)=>{
+    res.render('toolEnd',{user:req.user});
+});
+app.get('/questions.html',(req,res)=>{
+    res.render('questions',{user:req.user});
+});
 app.post('/register',(req,res)=>{
     userProvider.saveUser(req.body,function(err,user){
         if(err)
