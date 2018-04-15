@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PerfectYou Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+    <!-- <link rel="shortcut icon" href="images/icon-dark.ico" /> -->
+
+</head>
+
+<body>
+
+    <div id="page">
+        <header class="landingHead">
+          <hr id="topLine"/>
+        </header>
+
+        <div class="row" id="headRow">
+          <div class="col-sm-3">
+          <h2 class="title"> PERFECT YOU </h2>
+          </div>
+
+        </div>
+
+        <div class="home-intro">
+
+            <h2>Start Your Journey Here.</h2>
+          <div class="container">
+      <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="panel panel-login">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-6">
+                <a href="#" class="active" id="login-form-link">Login</a>
+              </div>
+              <div class="col-xs-6">
+                <a href="#" id="register-form-link">Register</a>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <form id="login-form" action="http://localhost:1598/login" method="post" role="form" style="display: block;">
+                  <div class="form-group">
+                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                  </div>
+                  <!--
+                  <div class="form-group text-center">
+                    <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                    <label for="remember"> Remember Me</label>
+                  </div>-->
+
+                  <!--SET INPUT TYPE TO SUBMIT IN PLACE OF "" -->
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                        <input type="submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+                      </div>
+                    </div>
+                  </div>
+                  <!--
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="text-center">
+                          <a href="https://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>-->
+                </form>
+                <form id="register-form" action="http://localhost:1598/register" method="post" role="form" style="display: none;">
+                  <div class="form-group">
+                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" required=true>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" required=true>
+                  </div>
+                <div class="form-group">
+                    <input type="number" name="age" id="age" tabindex="2" class="form-control" placeholder="Age (in years)" require= true>
+                  </div>
+                  <div class="form-group">
+                    <input type="number" name="weight" id="weight" tabindex="2" class="form-control" placeholder="Weight (in kg)" require=true>
+                  </div>
+                   <div class="form-group">
+                    <input type="number" name="height" id="height" tabindex="2" class="form-control" placeholder="Height (in ft)" require=true>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-sm-6 col-sm-offset-3">
+                        <input type="submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+        </div>
+
+
+        <footer class="myfooter" style="padding-top: 20px;">
+
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-1" style="padding-left:50px;">
+                    <div class="col-md-2" id="foot"> <a href="#">About Us</a></div>
+                    <div class="col-md-3" id="foot"> <a href="#"> Understanding Eating Disorders </a> </div>
+                    <div class="col-md-2" id="foot" style="padding-left:30px;"> <a href="#">Your Journey</a></div>
+                    <div class="col-md-3" id="foot" style="padding-left:28px;"> <a href="#">Terms & Conditions</a></div>
+                    <div class="col-md-2" id="foot"> <a href="#">Connect (Upcoming)</a></div>
+                </div>
+
+            </div>
+            <div class="row" id="subfoot" style="padding-top:0px;">
+                <div class="col-xs-7 col-xs-offset-1" style="margin-top:20px;padding-left:50px;">
+                  2018 &copy; PerfectYou, Inc. All rights reserved.
+                </div>
+
+                <div class="col-xs-2" id= "followtext">Follow Us On</div>
+                <div class="col-xs-2" id="followbt">
+                <img src='image/plus.png'/>
+                <img src='image/fb.png' style="width:17%;height:17%;" />
+                 <img src='image/twitter.png' />
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    console.log('here')
+  function randomImage(){
+  var images = [
+   'image/back2.jpg',
+   'image/back2.jpg'];
+  var size = images.length;
+  var x = Math.floor(size * Math.random());
+  console.log(x);
+  var element = document.getElementsByClassName('home-intro');
+  console.log(element);
+  element[0].style["background-image"] = "url("+ images[x] + ")";
+}
+
+document.addEventListener("DOMContentLoaded", randomImage());
+
+  $(function() {
+
+    $('#login-form-link').click(function(e) {
+    $("#login-form").delay(100).fadeIn(100);
+    $("#register-form").fadeOut(100);
+    $('#register-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+  });
+  $('#register-form-link').click(function(e) {
+    $("#register-form").delay(100).fadeIn(100);
+    $("#login-form").fadeOut(100);
+    $('#login-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+  });
+
+});
+   $(function(){
+    $('.title').click(function(){
+        window.location='index.html'
+    });
+    });
+     $(function(){
+    $('#login-submit').click(function(){
+        //window.location='home.html'
+    });
+    });
+
+
+})
+    </script>
+
+    </html>
