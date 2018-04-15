@@ -1,0 +1,19 @@
+{
+  "name": "aneroxia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^2.0.0",
+    "express": "^4.16.3",
+    "mongodb": "^3.0.6",
+    "monk": "^6.0.5",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
