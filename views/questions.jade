@@ -718,56 +718,6 @@ html
       } else
       slideIndex = 1;
       }
-    script(type='text/javascript').
-      var jsonObj = []; //declare object
-      $('#1').click(function () {
-      var ques =slideIndex;
-      var ans = 1;
-      jsonObj.push({
-      ques: ques,
-      ans: ans
-      });
-      });
-      $('#2').click(function () {
-      var ques =slideIndex;
-      var ans = 2;
-      jsonObj.push({
-      ques: ques,
-      ans: ans
-      });
-      });
-      $('#3').click(function () {
-      var ques =slideIndex;
-      var ans = 3;
-      jsonObj.push({
-      ques: ques,
-      ans: ans
-      });
-      });
-      $('#4').click(function () {
-      var ques =slideIndex;
-      var ans = 4;
-      jsonObj.push({
-      ques: ques,
-      ans: ans
-      });
-      });
-      $('#5').click(function () {
-      var ques = slideIndex;
-      var ans = 5;
-      jsonObj.push({
-      ques: ques,
-      ans: ans
-      });
-      });
-      $('#6').click(function () {
-      var ques = slideIndex;
-      var ans = 6;
-      jsonObj.push({
-      ques: ques,
-      ans: ans
-      });
-      });
   script(type='text/javascript').
     $(document).ready(function(){
     console.log('here')
@@ -794,9 +744,8 @@ html
     });
     });
     $(function(){
-    $('.title').click(function(){
-    window.location='index.html'
-    });
+    $('.logbutton').click(function(){
+    $.post( "localhost:1598/logout");
     });
     $(function(){
     $('#slide2').click(function(){
