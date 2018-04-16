@@ -1,1 +1,111 @@
-include toolEnd.html
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title PerfectYou Screening
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,400italic,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='css/bootstrap.css')
+    link(rel='stylesheet', href='css/owl.carousel.min.css')
+    link(rel='stylesheet', href='css/owl.theme.default.min.css')
+    link(rel='stylesheet', href='stylesheet/style.css')
+    script(src='js/modernizr-2.6.2.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='shortcut icon', href='image/icon.ico')
+  body#toolbody
+    #page
+      header.landingHead
+        hr#topLine
+      #headRow.row
+        .col-sm-3
+          h2.title  PERFECT YOU 
+        .col-sm-3
+        #topNav.col-sm-6
+          .col-xs-4
+          .col-xs-3(style='color:black') #{user.username}
+          .col-sm-3
+            button#logbutton.btn.btn-primary.btn-md(type='button')  Log Out
+      .nav-wrap
+        center
+          ul#example-one.group
+            li
+              a(href='home.html') Home
+            li#stest.current_page_item
+              a(href='#') Screening Test
+            li#sco
+              a(href='score.html') My Scores
+            li#dd
+              a(href='#') Daily Diary
+            li
+              a(href='#') Share My Story
+      #tool.row
+        .col-xs-2
+        .col-xs-8
+          center
+            h2(style='margin-top:30px;') Thank you for taking the test. Your progress is saved with us.
+          p(style='text-align: center;')
+             You may return to your test at any point in time and continue from where you left.
+        .col-xs-2
+      footer#warning.myfooter
+        .col-xs-1.col-xs-offset-1
+          img(src='image/warn.png', style='margin-left:20px;')
+        .col-xs-9(style='padding-left:0px')
+           This test has been designed for self-assessment purposes only. It does not diagonse. Kindly take it as an assessment tool only to know about your eating behavior and refer to a consultant if advised to do so.
+    script(src='https://code.jquery.com/jquery-3.1.0.js', integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', integrity='sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn', crossorigin='anonymous')
+    script.
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      function plusDivs(n) {
+      showDivs(slideIndex += n);
+      }
+      function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+      }
+  script(type='text/javascript').
+    $(document).ready(function(){
+    console.log('here')
+    $("#example-one").append("<li id='magic-line'></li>");
+    /* Cache it */
+    var $magicLine = $("#magic-line");
+    $magicLine
+    .width($(".current_page_item").width())
+    .css("left", $(".current_page_item a").position().left)
+    .data("origLeft", $magicLine.position().left)
+    .data("origWidth", $magicLine.width());
+    $("#example-one li").find("a").hover(function() {
+    $el = $(this);
+    leftPos = $el.position().left;
+    newWidth = $el.parent().width();
+    $magicLine.stop().animate({
+    left: leftPos,
+    width: newWidth
+    });
+    }, function() {
+    $magicLine.stop().animate({
+    left: $magicLine.data("origLeft"),
+    width: $magicLine.data("origWidth")
+    });
+    });
+    $(function(){
+    $('.title').click(function(){
+    window.location='index.html'
+    });
+    });
+    $(function(){
+    $('#beginbut').click(function(){
+    window.location='questions.html'
+    });
+    });
+    })

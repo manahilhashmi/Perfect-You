@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PerfectYou Screening</title>
+    <title>PerfectYou Scores</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
@@ -15,9 +15,7 @@
     <script src="js/modernizr-2.6.2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-
-    <!-- <link rel="shortcut icon" href="images/icon-dark.ico" /> -->
+    <link rel="shortcut icon" href="image/icon.ico" /> 
 
 </head>
 
@@ -38,7 +36,7 @@
             <div class="col-sm-3"></div>
             <div class="col-sm-6" id="topNav">
                 <div class="col-xs-4"></div>
-                <div class="col-xs-3" style="color:black">manahilhashmi</div>
+                <div class="col-xs-3" style="color:black">#{user.username}</div>
                 <div class="col-sm-3"> <button type="button" id = "logbutton" class="btn btn-primary btn-md"> Log Out</a></button> 
                 </div>  
             </div>
@@ -62,10 +60,10 @@
         
             <div class="col-xs-2"></div>
             <div class="col-xs-8">
-            <center><h2 style="margin-top:0px;">You scored a total of: <span style="font-size:40px;">88</span></h2></center>
+            <center><h2 style="margin-top:0px;">You scored a total of: <span style="font-size:40px;">#{user.score}</span></h2></center>
                 <div class="row" id="innerscore">
                     <h4 style="margin-left:10%;color:#808080"> Interpret Your Score</h4>
-                    <h4 style="color:#808080;margin-left:30%"> Your BMI Score:<span style="font-size:30px;">15</span></h4>
+                    <h4 style="color:#808080;margin-left:30%"> Your BMI Score:<span style="font-size:30px;">#{user.bmi}</span></h4>
                    
                    
 

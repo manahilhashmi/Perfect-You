@@ -1,1 +1,129 @@
-include log.html
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title PerfectYou Login
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,400italic,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='css/bootstrap.css')
+    link(rel='stylesheet', href='css/owl.carousel.min.css')
+    link(rel='stylesheet', href='css/owl.theme.default.min.css')
+    link(rel='stylesheet', href='stylesheet/style.css')
+    script(src='js/modernizr-2.6.2.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(rel='shortcut icon', href='image/icon.ico')
+  body
+    #page
+      header.landingHead
+        hr#topLine
+      #headRow.row
+        .col-sm-3
+          h2.title  PERFECT YOU 
+      .home-intro
+        h2 Start Your Journey Here.
+        .container
+          .row
+            .col-md-6.col-md-offset-3
+              .panel.panel-login
+                .panel-heading
+                  .row
+                    .col-xs-6
+                      a#login-form-link.active(href='#') Login
+                    .col-xs-6
+                      a#register-form-link(href='#') Register
+                  hr
+                .panel-body
+                  .row
+                    .col-lg-12
+                      form#login-form(action='http://localhost:1598/login', method='post', role='form', style='display: block;')
+                        .form-group
+                          input#username.form-control(type='text', name='username', tabindex='1', placeholder='Username', value='')
+                        .form-group
+                          input#password.form-control(type='password', name='password', tabindex='2', placeholder='Password')
+                        .form-group
+                          .row
+                            .col-sm-6.col-sm-offset-3
+                              input#login-submit.form-control.btn.btn-login(type='submit', name='login-submit', tabindex='4', value='Log In')
+                      form#register-form(action='http://localhost:1598/register', method='post', role='form', style='display: none;')
+                        .form-group
+                          input#username.form-control(type='text', name='username', tabindex='1', placeholder='Username', value='', required='true')
+                        .form-group
+                          input#password.form-control(type='password', name='password', tabindex='2', placeholder='Password', required='true')
+                        .form-group
+                          input#age.form-control(type='number', name='age', tabindex='2', placeholder='Age (in years)', required='true')
+                        .form-group
+                          input#weight.form-control(type='number', name='weight', tabindex='2', placeholder='Weight (in kg)', required='true')
+                        .form-group
+                          input#height.form-control(type='number', name='height', tabindex='2', placeholder='Height (in ft)', required='true')
+                        .form-group
+                          .row
+                            .col-sm-6.col-sm-offset-3
+                              input#register-submit.form-control.btn.btn-register(type='submit', name='register-submit', tabindex='4', value='Register Now')
+      footer.myfooter(style='padding-top: 20px;')
+        .row
+          .col-xs-10.col-xs-offset-1(style='padding-left:50px;')
+            #foot.col-md-2
+              a(href='#') About Us
+            #foot.col-md-3
+              a(href='#')  Understanding Eating Disorders 
+            #foot.col-md-2(style='padding-left:30px;')
+              a(href='#') Your Journey
+            #foot.col-md-3(style='padding-left:28px;')
+              a(href='#') Terms & Conditions
+            #foot.col-md-2
+              a(href='#') Connect (Upcoming)
+        #subfoot.row(style='padding-top:0px;')
+          .col-xs-7.col-xs-offset-1(style='margin-top:20px;padding-left:50px;')
+             2018 © PerfectYou, Inc. All rights reserved.
+          #followtext.col-xs-2 Follow Us On
+          #followbt.col-xs-2
+            img(src='image/plus.png')
+            img(src='image/fb.png', style='width:17%;height:17%;')
+            img(src='image/twitter.png')
+    script(src='https://code.jquery.com/jquery-3.1.0.js', integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', integrity='sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn', crossorigin='anonymous')
+  script(type='text/javascript').
+    $(document).ready(function(){
+    console.log('here')
+    function randomImage(){
+    var images = [
+    'image/back2.jpg',
+    'image/back2.jpg'];
+    var size = images.length;
+    var x = Math.floor(size * Math.random());
+    console.log(x);
+    var element = document.getElementsByClassName('home-intro');
+    console.log(element);
+    element[0].style["background-image"] = "url("+ images[x] + ")";
+    }
+    document.addEventListener("DOMContentLoaded", randomImage());
+    $(function() {
+    $('#login-form-link').click(function(e) {
+    $("#login-form").delay(100).fadeIn(100);
+    $("#register-form").fadeOut(100);
+    $('#register-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+    });
+    $('#register-form-link').click(function(e) {
+    $("#register-form").delay(100).fadeIn(100);
+    $("#login-form").fadeOut(100);
+    $('#login-form-link').removeClass('active');
+    $(this).addClass('active');
+    e.preventDefault();
+    });
+    });
+    $(function(){
+    $('.title').click(function(){
+    window.location='/'
+    });
+    });
+    $(function(){
+    $('#login-submit').click(function(){
+    });
+    });
+    })
