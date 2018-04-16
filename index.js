@@ -94,9 +94,9 @@ app.post('/login',
     function(req,res){
         res.redirect('/home.html');
     });
-app.post('/logout',(req,res)=>{
+app.get('/logOut.html',(req,res)=>{
     req.logout();
-    res.redirect('/');
+    res.render('logOut');
 });
 
 app.listen(1598,()=>console.log('listening at 3000'));

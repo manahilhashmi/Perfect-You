@@ -28,7 +28,8 @@ html
           .col-xs-4
           .col-xs-3(style='color:black') #{user.username}
           .col-sm-3
-            button#logbutton.btn.btn-primary.btn-md(type='button')  Log Out
+                  a(href="/logOut.html")
+                         button#logbutton.btn.btn-primary.btn-md(type='button')  Log Out
       .nav-wrap
         center
           ul#example-one.group
@@ -688,7 +689,8 @@ html
                       button.btn.btn-primary(type='button', onclick='plusDivs(1)') Never
             .row
               button#slide1.btn.btn-primary.btn-md(type='button', onclick='plusDivs(-1)') Previous
-              button#slide2.btn.btn-primary.btn-md(type='button', style='margin-right:6px;') Save and Exit
+              a(href="/toolEnd.html")
+                      button#slide2.btn.btn-primary.btn-md(type='button', style='margin-right:6px;') Save and Exit
       footer#warning.myfooter
         .col-xs-1.col-xs-offset-1
           img(src='image/warn.png', style='margin-left:20px;')
@@ -749,6 +751,7 @@ html
     });
     $(function(){
     $('#slide2').click(function(){
+    console.log('------------');
     window.location='toolEnd.html'
     });
     });
