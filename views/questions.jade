@@ -56,17 +56,17 @@ html
                 ul
                   #options.btn-group
                     li
-                      button.btn.btn-primary(type='button', onclick='plusDivs(1)') Always
+                      button#1.btn.btn-primary(type='button', onclick='plusDivs(1)') Always
                     li
-                      button.btn.btn-primary(type='button', onclick='plusDivs(1)') Usually
+                      button#2.btn.btn-primary(type='button', onclick='plusDivs(1)') Usually
                     li
-                      button.btn.btn-primary(type='button', onclick='plusDivs(1)') Often
+                      button#3.btn.btn-primary(type='button', onclick='plusDivs(1)') Often
                     li
-                      button.btn.btn-primary(type='button', onclick='plusDivs(1)') Sometimes
+                      button#4.btn.btn-primary(type='button', onclick='plusDivs(1)') Sometimes
                     li
-                      button.btn.btn-primary(type='button', onclick='plusDivs(1)') Rarely
+                      button#5.btn.btn-primary(type='button', onclick='plusDivs(1)') Rarely
                     li
-                      button.btn.btn-primary(type='button', onclick='plusDivs(1)') Never
+                      button#6.btn.btn-primary(type='button', onclick='plusDivs(1)') Never
             .mySlides.w3-animate-right
               span#prog 2/30
               center
@@ -718,6 +718,56 @@ html
       } else
       slideIndex = 1;
       }
+    script(type='text/javascript').
+      var jsonObj = []; //declare object
+      $('#1').click(function () {
+      var ques =slideIndex;
+      var ans = 1;
+      jsonObj.push({
+      ques: ques,
+      ans: ans
+      });
+      });
+      $('#2').click(function () {
+      var ques =slideIndex;
+      var ans = 2;
+      jsonObj.push({
+      ques: ques,
+      ans: ans
+      });
+      });
+      $('#3').click(function () {
+      var ques =slideIndex;
+      var ans = 3;
+      jsonObj.push({
+      ques: ques,
+      ans: ans
+      });
+      });
+      $('#4').click(function () {
+      var ques =slideIndex;
+      var ans = 4;
+      jsonObj.push({
+      ques: ques,
+      ans: ans
+      });
+      });
+      $('#5').click(function () {
+      var ques = slideIndex;
+      var ans = 5;
+      jsonObj.push({
+      ques: ques,
+      ans: ans
+      });
+      });
+      $('#6').click(function () {
+      var ques = slideIndex;
+      var ans = 6;
+      jsonObj.push({
+      ques: ques,
+      ans: ans
+      });
+      });
   script(type='text/javascript').
     $(document).ready(function(){
     console.log('here')

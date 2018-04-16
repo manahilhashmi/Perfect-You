@@ -66,13 +66,13 @@
                 <div class="progress-bar" id = "fill" role="progressbar" style="width:3.3%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div></div> </center>
              
                 <p>I am terrified of being overweight.</p>
-                 <center><ul><div class="btn-group" id="options">
-                  <li><button type="button" class="btn btn-primary" onclick="plusDivs(1)">Always</button></li>
-                  <li><button type="button" class="btn btn-primary" onclick="plusDivs(1)">Usually</button></li>
-                  <li><button type="button" class="btn btn-primary" onclick="plusDivs(1)">Often</button></li>
-                  <li><button type="button" class="btn btn-primary" onclick="plusDivs(1)">Sometimes</button></li>
-                  <li><button type="button" class="btn btn-primary" onclick="plusDivs(1)">Rarely</button></li>
-                  <li><button type="button" class="btn btn-primary" onclick="plusDivs(1)">Never</button></li>
+                <center><ul><div class="btn-group" id="options">
+                  <li><button type="button" class="btn btn-primary" id="1" onclick="plusDivs(1)">Always</button></li>
+                  <li><button type="button" class="btn btn-primary" id="2" onclick="plusDivs(1)">Usually</button></li>
+                  <li><button type="button" class="btn btn-primary" id="3" onclick="plusDivs(1)">Often</button></li>
+                  <li><button type="button" class="btn btn-primary" id="4" onclick="plusDivs(1)">Sometimes</button></li>
+                  <li><button type="button" class="btn btn-primary" id="5" onclick="plusDivs(1)">Rarely</button></li>
+                  <li><button type="button" class="btn btn-primary" id="6" onclick="plusDivs(1)">Never</button></li>
                 </div> </ul></center>
             </div>
             
@@ -627,6 +627,84 @@ function showDivs(n) {
     slideIndex = 1; 
 }
 </script>
+
+<script type="text/javascript">
+  var jsonObj = []; //declare object
+
+    $('#1').click(function () {
+        
+        var ques =slideIndex;
+        var ans = 1;
+        
+        
+        jsonObj.push({
+           ques: ques,
+           ans: ans
+      
+           });
+    });
+    $('#2').click(function () {
+        
+        var ques =slideIndex;
+        var ans = 2;
+        
+        
+        jsonObj.push({
+           ques: ques,
+           ans: ans
+      
+           });
+    });
+    $('#3').click(function () {
+        
+        var ques =slideIndex;
+        var ans = 3;
+        
+        
+        jsonObj.push({
+           ques: ques,
+           ans: ans
+      
+           });
+    });
+    $('#4').click(function () {
+        
+        var ques =slideIndex;
+        var ans = 4;
+        
+        
+        jsonObj.push({
+           ques: ques,
+           ans: ans
+      
+           });
+    });
+    $('#5').click(function () {
+        
+        var ques = slideIndex;
+        var ans = 5;
+        
+        
+        jsonObj.push({
+           ques: ques,
+           ans: ans
+      
+           });
+    });
+    $('#6').click(function () {
+        
+        var ques = slideIndex;
+        var ans = 6;
+        
+        
+        jsonObj.push({
+           ques: ques,
+           ans: ans
+      
+           });
+    });
+</script>
+
 
 </body>
 
