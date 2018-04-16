@@ -1,262 +1,198 @@
 doctype html
 html
-	head
-		meta(charset='utf-8')
-		meta(http-equiv='X-UA-Compatible', content='IE=edge')
-		title PerfectYou
-		meta(name='viewport', content='width=device-width, initial-scale=1')
-		link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
-		link(href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,400italic,700', rel='stylesheet', type='text/css')
-		link(rel='stylesheet', href='css/bootstrap.css')
-		link(rel='stylesheet', href='css/owl.carousel.min.css')
-		link(rel='stylesheet', href='css/owl.theme.default.min.css')
-		link(rel='stylesheet', href='stylesheet/style.css')
-		script(src='js/modernizr-2.6.2.min.js')
-		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
-		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
-		<link rel="shortcut icon" href="image/icon.ico" />
-	body
-		#page
-			header.landingHead
-				hr#topLine
-			#headRow.row
-				.col-sm-3
-					h2.title  PERFECT YOU 
-				.col-sm-3
-				#topNav.col-sm-6
-					.col-sm-3
-						a(href='#', style='color:#FF7A01;') How it works 
-					.col-sm-5
-						a(href='#') Understanding Eating Disorders 
-					.col-sm-3
-						if !user
-							button#logbutton.btn.btn-primary.btn-md(type='button')  LOG IN
-						else
-							 #{user.username} 
-				.row
-					.col-sm-6
-					.col-sm-3.col-xs-offset-2
-						hr#navLine
-			.content
-				#imageBanner
-					h1
-						center
-							 Overcome your stressful thoughts and challenges. 
-							br
-							 Build resilience 
-							b TODAY
-							 .
-					img(src='image/back3.jpg', alt='Snow', style='width:100%;height:680px;')
-					button#bannerButton.btn
-						b Start My Journey
-				#secA.row
-					.col-xs-1
-					.col-xs-5
-						h3 Set Up Your Account
-						hr#navLine
-						br
-						p
-							 In order to ensure that you may keep returning here in a hassle free manner, register for free the first time. This will allow us to keep your records safe and track your progress through the journey. 
-							br
-							 Happy Signing up!
-						button#signBt.btn
-							b Sign Up
-					.col-xs-5
-						img#landingImg(src='image/landing1.jpg')
-				#secA.row(style='background-color:#F0F0F0')
-					.col-xs-1
-					.col-xs-5
-						img#landingImgB(src='image/landing10.png')
-					.col-xs-5
-						h3 Take Eating Test
-						hr#navLine
-						br
-						p
-							 Take a screening test to assess your eating habits today. It is personal, safe, and effective. Taking the test will acknowledge you with your eating behavior and will give an insight if you are eating healthy or if you need more nutrients.
-							br
-							 The test will ask you quesitons about your eating behavior as well as some quesitons about your body shape.
-				#secB.row
-					h3#central Your Eating Scores
-					hr#navLine
-					h4 Take the test and assess your eating scores today!
-					p(style='padding-top:0px')
-						 Your scores are relative to other people who face similar eating challenge. The results describe to you where you stand and allows you to assess yourself. It is free of cost and gives a quick and personal consultation. 
-						br
-						 The scores should not be taken as final diagnosis because they are only an amalgamation of eating questionnaires administered worldwide.
-					#scoreRow.row
-						.col-xs-2
-						.col-xs-3(style='padding-left:0px;height: auto;')
-							img(src='image/group1.jpg')
-							p(style='padding-top:0px;margin-top:-18px;') 1 out of every 8 girls face an eating challenge.
-						.col-xs-3
-							.counter(data-count='1200') 0
-							p Females with reported eating disorders in Lahore
-						.col-xs-4
-							h5(style='margin-left:12px;font-size:20px;') Percentage Improvement
-							ul.chart
-								li
-									span(style='height:30%', title='Without Therapy')
-								li
-									span(style='height:88%', title='With Therapy')
-				#secB.row(style='background-color:#F0F0F0')
-					h3#central Get Inspired
-					hr#navLine(style='width:10%')
-					h4 Meet others who have shared their survival and success stories.
-					button#logbutton.btn.btn-primary.btn-md(type='button') Share My Story
-				#secA.row(style='padding-bottom: 0px;')
-					#myCarousel.carousel.slide(data-ride='carousel', data-interval='false', style='height: auto')
-						ol.carousel-indicators
-							li.active(data-target='#myCarousel', data-slide-to='0')
-							li(data-target='#myCarousel', data-slide-to='1')
-							li(data-target='#myCarousel', data-slide-to='2')
-						.carousel-inner
-							.item.active
-								.col-xs-1
-								.col-xs-6
-									h4 Fatima K.
-									h5
-										i "I struggled, I fought, I survived..."
-									p
-										 I did not know that I was facing a challenge. I did not know that they name my condition. Everyone just thought that I am dieting. My parents used to scold me. I had no friends left because all of them thought that I have gone crazy. I wanted to stop but I could not.
-										br
-										br
-										 One day my mother took me to a family doctor. That's when my life began to change. He discussed my eating routines with me. He assured me that eating won't make me fat.
-								.col-xs-4
-									img#landingImg(src='image/story1.jpg')
-							.item
-								.col-xs-1
-								.col-xs-6
-									h4 Fatima K.
-									h5 "I struggled, I fought, I survived..."
-									p
-										 I did not know that I was facing a challenge. I did not know that they name my condition. Everyone just thought that I am dieting. My parents used to scold me. I had no friends left because all of them thought that I have gone crazy. I wanted to stop but I could not.
-										br
-										br
-										 One day my mother took me to a family doctor. That's when my life began to change. He discussed my eating routines with me. He assured me that eating won't make me fat.
-								.col-xs-4
-									img#landingImg(src='image/story1.jpg')
-							.item
-								.col-xs-1
-								.col-xs-6
-									h4 Fatima K.
-									h5 "I struggled, I fought, I survived..."
-									p
-										 I did not know that I was facing a challenge. I did not know that they name my condition. Everyone just thought that I am dieting. My parents used to scold me. I had no friends left because all of them thought that I have gone crazy. I wanted to stop but I could not.
-										br
-										br
-										 One day my mother took me to a family doctor. That's when my life began to change. He discussed my eating routines with me. He assured me that eating won't make me fat.
-								.col-xs-4
-									img#landingImg(src='image/story1.jpg')
-				#secB.row(style='background-color:#F0F0F0')
-					.col-xs-2
-					.col-xs-2
-						img#quots(src='image/quot.png')
-					.col-xs-5
-						br
-						br
-						h2 "Beauty is not a state of body."
-					.row
-						.col-xs-7
-						#mytextdiv.col-xs-4
-							.divider
-							.mytexttitle
-								 Healthy Palace
-				footer.myfooter
-					.row
-						.col-xs-10.col-xs-offset-1(style='padding-left:50px;')
-							#foot.col-md-2
-								a(href='#') About Us
-							#foot.col-md-3
-								a(href='#')  Understanding Eating Disorders 
-							#foot.col-md-2(style='padding-left:30px;')
-								a(href='#') Your Journey
-							#foot.col-md-3(style='padding-left:28px;')
-								a(href='#') Terms & Conditions
-							#foot.col-md-2
-								a(href='#') Connect (Upcoming)
-					#subfoot.row
-						.col-xs-7.col-xs-offset-1(style='margin-top:20px;padding-left:50px;')
-							 2018 © PerfectYou, Inc. All rights reserved.
-						#followtext.col-xs-2 Follow Us On
-						#followbt.col-xs-2
-							img(src='image/plus.png')
-							img(src='image/fb.png', style='width:17%;height:17%;')
-							img(src='image/twitter.png')
-		//
-			<script>
-			window.onscroll = function() {myFunction()};
-			var header = document.getElementById("headRow");
-			var sticky = header.offsetTop;
-			function myFunction() {
-			if (window.pageYOffset >= sticky) {
-			header.classList.add("sticky");
-			} else {
-			header.classList.remove("sticky");
-			}
-			}
-			</script>
-		script(src='https://code.jquery.com/jquery-3.1.0.js', integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n', crossorigin='anonymous')
-		script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', integrity='sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb', crossorigin='anonymous')
-		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn', crossorigin='anonymous')
-	script(type='text/javascript').
-		$(document).ready(function(){
-		console.log('here')
-		$('.counter').each(function() {
-		var $this = $(this),
-		countTo = $this.attr('data-count');
-		$({ countNum: $this.text()}).animate({
-		countNum: countTo
-		},
-		{
-		duration: 10000,
-		easing:'linear',
-		step: function() {
-		$this.text(Math.floor(this.countNum));
-		},
-		complete: function() {
-		$this.text(this.countNum);
-		//alert('finished');
-		}
-		});
-		});
-		$(function(){
-		$('#logbutton').click(function(){
-		window.location='log.html'
-		});
-		});
-		$(function(){
-		$('#bannerButton').click(function(){
-		window.location='log.html'
-		});
-		});
-		$(function(){
-		$('#signBt').click(function(){
-		window.location='log.html'
-		});
-		});
-		function isElementInViewport(elem) {
-		var $elem = $(elem);
-		// Get the scroll position of the page.
-		var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
-		var viewportTop = $(scrollElem).scrollTop();
-		var viewportBottom = viewportTop + $(window).height();
-		// Get the position of the element on the page.
-		var elemTop = Math.round( $elem.offset().top );
-		var elemBottom = elemTop + $elem.height();
-		return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
-		}
-		// Check if it's time to start the animation.
-		function checkAnimation() {
-		var $elem = $('.chart span');
-		// If the animation has already been started
-		if ($elem.hasClass('start')) return;
-		if (isElementInViewport($elem)) {
-		// Start the animation
-		$elem.addClass('start');
-		}
-		}
-		// Capture scroll events
-		$(window).scroll(function(){
-		checkAnimation();
-		});
-		})
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title PerfectYou
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', type='text/css', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+    link(href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,400italic,700', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='css/bootstrap.css')
+    link(rel='stylesheet', href='css/owl.carousel.min.css')
+    link(rel='stylesheet', href='css/owl.theme.default.min.css')
+    link(rel='stylesheet', href='stylesheet/style.css')
+    script(src='js/modernizr-2.6.2.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    script(src='js/index.js')
+    link(rel='shortcut icon', href='image/icon.ico')
+  body
+    #page
+      header.landingHead
+        hr#topLine
+      #headRow.row
+        .col-sm-3
+          h2.title  PERFECT YOU 
+        .col-sm-3
+        #topNav.col-sm-6
+          .col-sm-3
+            a(href='#', style='color:#FF7A01;') How it works 
+          .col-sm-5
+            a(href='#') Understanding Eating Disorders 
+          .col-sm-3
+            button#logbutton.btn.btn-primary.btn-md(type='button')  LOG IN
+        .row
+          .col-sm-6
+          .col-sm-3.col-xs-offset-2
+            hr#navLine
+      .content
+        #imageBanner
+          h1
+            center
+              | Overcome your stressful thoughts and challenges. 
+              br
+              | Build resilience 
+              b TODAY
+              | .
+          img(src='image/back3.jpg', alt='Snow', style='width:100%;height:680px;')
+          button#bannerButton.btn
+            b Start My Journey
+        #secA.row
+          .col-xs-1
+          .col-xs-5
+            h3 Set Up Your Account
+            hr#navLine
+            br
+            p
+              | In order to ensure that you may keep returning here in a hassle free manner, register for free the first time. This will allow us to keep your records safe and track your progress through the journey. 
+              br
+              | Happy Signing up!
+            button#signBt.btn
+              b Sign Up
+          .col-xs-5
+            img#landingImg(src='image/landing1.jpg')
+        #secA.row(style='background-color:#F0F0F0')
+          .col-xs-1
+          .col-xs-5
+            img#landingImgB(src='image/landing10.png')
+          .col-xs-5
+            h3 Take Eating Test
+            hr#navLine
+            br
+            p
+              | Take a screening test to assess your eating habits today. It is personal, safe, and effective. Taking the test will acknowledge you with your eating behavior and will give an insight if you are eating healthy or if you need more nutrients.
+              br
+              | The test will ask you quesitons about your eating behavior as well as some quesitons about your body shape.
+        #secB.row
+          h3#central Your Eating Scores
+          hr#navLine
+          h4 Take the test and assess your eating scores today!
+          p(style='padding-top:0px')
+            | Your scores are relative to other people who face similar eating challenge. The results describe to you where you stand and allows you to assess yourself. It is free of cost and gives a quick and personal consultation. 
+            br
+            | The scores should not be taken as final diagnosis because they are only an amalgamation of eating questionnaires administered worldwide.
+          #scoreRow.row
+            .col-xs-2
+            .col-xs-3(style='padding-left:0px;height: auto;')
+              img(src='image/group1.jpg')
+              p(style='padding-top:0px;margin-top:-18px;') 1 out of every 8 girls face an eating challenge.
+            .col-xs-3
+              .counter(data-count='1200') 0
+              p Females with reported eating disorders in Lahore
+            .col-xs-4
+              h5(style='margin-left:12px;font-size:20px;') Percentage Improvement
+              ul.chart
+                li
+                  span(style='height:30%', title='Without Therapy')
+                li
+                  span(style='height:88%', title='With Therapy')
+        #secB.row(style='background-color:#F0F0F0')
+          h3#central Get Inspired
+          hr#navLine(style='width:10%')
+          h4 Meet others who have shared their survival and success stories.
+          button#logbutton.btn.btn-primary.btn-md(type='button') Share My Story
+        #secA.row(style='padding-bottom: 0px;')
+          #myCarousel.carousel.slide(data-ride='carousel', data-interval='false', style='height: auto')
+            ol.carousel-indicators
+              li.active(data-target='#myCarousel', data-slide-to='0')
+              li(data-target='#myCarousel', data-slide-to='1')
+              li(data-target='#myCarousel', data-slide-to='2')
+            .carousel-inner
+              .item.active
+                .col-xs-1
+                .col-xs-6
+                  h4 Fatima K.
+                  h5
+                    i "I struggled, I fought, I survived..."
+                  p
+                    | I did not know that I was facing a challenge. I did not know that they name my condition. Everyone just thought that I am dieting. My parents used to scold me. I had no friends left because all of them thought that I have gone crazy. I wanted to stop but I could not.
+                    br
+                    br
+                    | One day my mother took me to a family doctor. That's when my life began to change. He discussed my eating routines with me. He assured me that eating won't make me fat.
+                .col-xs-4
+                  img#landingImg(src='image/story1.jpg')
+              .item
+                .col-xs-1
+                .col-xs-6
+                  h4 Fatima K.
+                  h5 "My friends abondoned me."
+                  p
+                    | I did not know that I was facing a challenge. I did not know that they name my condition. Everyone just thought that I am dieting. My parents used to scold me. I had no friends left because all of them thought that I have gone crazy. I wanted to stop but I could not.
+                    br
+                    br
+                    | One day my mother took me to a family doctor. That's when my life began to change. He discussed my eating routines with me. He assured me that eating won't make me fat.
+                .col-xs-4
+                  img#landingImg(src='image/story2.jpg', style='margin-top: 0px;')
+              .item
+                .col-xs-1
+                .col-xs-6
+                  h4 Fatima K.
+                  h5 "I struggled, I fought, I survived..."
+                  p
+                    | I did not know that I was facing a challenge. I did not know that they name my condition. Everyone just thought that I am dieting. My parents used to scold me. I had no friends left because all of them thought that I have gone crazy. I wanted to stop but I could not.
+                    br
+                    br
+                    | One day my mother took me to a family doctor. That's when my life began to change. He discussed my eating routines with me. He assured me that eating won't make me fat.
+                .col-xs-4
+                  img#landingImg(src='image/story1.jpg')
+        #secB.row(style='background-color:#F0F0F0')
+          .col-xs-2
+          .col-xs-2
+            img#quots(src='image/quot.png')
+          .col-xs-5
+            br
+            br
+            h2 "Beauty is not a state of body."
+          .row
+            .col-xs-7
+            #mytextdiv.col-xs-4
+              .divider
+              .mytexttitle
+                | Healthy Palace
+        footer.myfooter
+          .row
+            .col-xs-10.col-xs-offset-1(style='padding-left:50px;')
+              #foot.col-md-2
+                a(href='#') About Us
+              #foot.col-md-3
+                a(href='#')  Understanding Eating Disorders 
+              #foot.col-md-2(style='padding-left:30px;')
+                a(href='#') Your Journey
+              #foot.col-md-3(style='padding-left:28px;')
+                a(href='#') Terms & Conditions
+              #foot.col-md-2
+                a(href='#') Connect (Upcoming)
+          #subfoot.row
+            .col-xs-7.col-xs-offset-1(style='margin-top:20px;padding-left:50px;')
+              | 2018 © PerfectYou, Inc. All rights reserved.
+            #followtext.col-xs-2 Follow Us On
+            #followbt.col-xs-2
+              img(src='image/plus.png')
+              img(src='image/fb.png', style='width:17%;height:17%;')
+              img(src='image/twitter.png')
+    //
+      <script>
+      window.onscroll = function() {myFunction()};
+      var header = document.getElementById("headRow");
+      var sticky = header.offsetTop;
+      function myFunction() {
+      if (window.pageYOffset >= sticky) {
+      header.classList.add("sticky");
+      } else {
+      header.classList.remove("sticky");
+      }
+      }
+      </script>
+    script(src='https://code.jquery.com/jquery-3.1.0.js', integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', integrity='sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn', crossorigin='anonymous')
