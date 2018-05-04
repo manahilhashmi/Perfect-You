@@ -7,7 +7,7 @@ const Strategy = require('passport-local').Strategy;
 
 
 
-app.set('view engine','jade');
+app.set('view engine','pug');
 app.use(require('morgan')('combined'));
 app.use(express.static('public'));
 app.use(require('cookie-parser')());
@@ -99,4 +99,4 @@ app.get('/logOut.html',(req,res)=>{
     res.render('logOut');
 });
 
-app.listen(1598,()=>console.log('listening at 3000'));
+app.listen(3000,()=>console.log('listening at 3000'));
