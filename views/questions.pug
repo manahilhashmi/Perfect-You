@@ -689,7 +689,7 @@ head
                   button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
         .row
           button#slide1.btn.btn-primary.btn-md(type='button' onclick='plusDivs(-1)') Previous
-          button#slide2.btn.btn-primary.btn-md(type='button' style='margin-right:6px;') Save and Exit
+          button#slide2.btn.btn-primary.btn-md(type='button' onClick='saveAndExit()' style='margin-right:6px;') Save and Exit
   footer#warning.myfooter
     .col-xs-1.col-xs-offset-1
       img(src='image/warn.png' style='margin-left:20px;')
@@ -721,7 +721,11 @@ script.
       slideIndex = 1;
   }
   function saveAndExit(){
-   console.log(answers);
+   $.post("http://localhost:3000/saveResults",answers).done(function(msg){
+          window.location='toolEnd.html'
+        }).fail(function(xhr,status,error){
+          alert('Saving results failed, please try again')
+        });
   }
 script(type='text/javascript').
   $(document).ready(function(){
@@ -755,6 +759,7 @@ script(type='text/javascript').
   });
     $(function(){
       $('#slide2').click(function(){
+        console.log('here')
         $.post("http://localhost:3000/saveResults",answers).done(function(msg){
           window.location='toolEnd.html'
         }).fail(function(xhr,status,error){

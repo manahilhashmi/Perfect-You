@@ -55,9 +55,12 @@ app.get('/log.html',(req,res)=>{
 app.get('/home.html',
     require('connect-ensure-login').ensureLoggedIn('/log.html'),
     function(req,res){
-        if(req.user.results)
+        if(req.user.results){
         progress = Math.trunc((Object.keys(req.user.results).length/30)*100);
-        res.render('home',{user:req.user,progess:progress});
+        res.render('home',{user:req.user,progess:progress})}
+        else{
+            res.render('home',{user:req.user});
+        }
 });
 app.get('/tool.html',
     require('connect-ensure-login').ensureLoggedIn('/log.html'),
