@@ -38,7 +38,7 @@ html
                 .panel-body
                   .row
                     .col-lg-12
-                      form#login-form(action='http://localhost:1598/login', method='post', role='form', style='display: block;')
+                      form#login-form(action='http://localhost:3000/login', method='post', role='form', style='display: block;')
                         .form-group
                           input#username.form-control(type='text', name='username', tabindex='1', placeholder='Username', value='')
                         .form-group
@@ -47,7 +47,7 @@ html
                           .row
                             .col-sm-6.col-sm-offset-3
                               input#login-submit.form-control.btn.btn-login(type='submit', name='login-submit', tabindex='4', value='Log In')
-                      form#register-form(action='http://localhost:1598/register', method='post', role='form', style='display: none;')
+                      form#register-form(action='http://localhost:3000/register', method='post', role='form', style='display: none;')
                         .form-group
                           input#username.form-control(type='text', name='username', tabindex='1', placeholder='Username', value='', required='true')
                         .form-group

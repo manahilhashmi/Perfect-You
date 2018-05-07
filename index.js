@@ -22,9 +22,6 @@ app.use(passport.session());
 passport.use(new Strategy(
     function(username,password,cb){
         userProvider.findByUsername(username,password,function(err,user){
-            console.log('-----------');
-            console.log(user);
-            console.log('-----------');
             if(err) {return cb(err);}
             if(!user) {return cb(null,false);}
             return cb(null,user);
@@ -44,7 +41,6 @@ passport.serializeUser(function(user,cb){
 
 function health(req,res){
 	userProvider.getAll(function(docs){
-		console.log(docs);
 	});
 	res.status(200).send('service is ok');
 }
@@ -59,7 +55,9 @@ app.get('/log.html',(req,res)=>{
 app.get('/home.html',
     require('connect-ensure-login').ensureLoggedIn('/log.html'),
     function(req,res){
-        res.render('home',{user:req.user});
+        if(req.user.results)
+        progress = Math.trunc((Object.keys(req.user.results).length/30)*100);
+        res.render('home',{user:req.user,progess:progress});
 });
 app.get('/tool.html',
     require('connect-ensure-login').ensureLoggedIn('/log.html'),
@@ -79,7 +77,7 @@ app.get('/toolEnd.html',
 app.get('/questions.html',
     require('connect-ensure-login').ensureLoggedIn('/log.html'),
     function(req,res){
-        res.render('questions',{user:req.user});
+        res.render('questions',{user:req.user,manahil:false});
 });
 app.post('/register',(req,res)=>{
     userProvider.saveUser(req.body,function(err,user){
@@ -98,5 +96,17 @@ app.get('/logOut.html',(req,res)=>{
     req.logout();
     res.render('logOut');
 });
-
+app.post('/saveResults',(req,res)=>{
+	userProvider.saveResults(req.user._id,req.body,function(err){
+		if(err)
+			res.sendStatus(400);
+		else
+			res.sendStatus(200);
+	});
+});
+app.get('/all',(req,res)=>{
+	userProvider.getAll(function(docs){
+		res.send(docs);
+	})
+});
 app.listen(3000,()=>console.log('listening at 3000'));

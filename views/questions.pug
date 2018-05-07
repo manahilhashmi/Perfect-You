@@ -1,0 +1,765 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  title PerfectYou Screening
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel='stylesheet' type='text/css' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  link(href='https://fonts.googleapis.com/css?family=Raleway:400,300,600,400italic,700' rel='stylesheet' type='text/css')
+  link(rel='stylesheet' href='css/bootstrap.css')
+  link(rel='stylesheet' href='css/owl.carousel.min.css')
+  link(rel='stylesheet' href='css/owl.theme.default.min.css')
+  link(rel='stylesheet' href='stylesheet/style.css')
+  script(src='js/modernizr-2.6.2.min.js')
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+  link(rel='stylesheet' href='https://www.w3schools.com/w3css/4/w3.css')
+  link(rel='shortcut icon' href='image/icon.ico')
+#page
+  header.landingHead
+    hr#topLine
+  #headRow.row
+    .col-sm-3
+      h2.title  PERFECT YOU 
+    .col-sm-3
+    #topNav.col-sm-6
+      .col-xs-4
+      .col-xs-3(style='color:black') #{user.username}
+      .col-sm-3
+        button#logbutton.btn.btn-primary.btn-md(type='button')  Log Out
+  .nav-wrap
+    center
+      ul#example-one.group
+        li
+          a(href='home.html') Home
+        li#stest.current_page_item
+          a(href='#') Screening Test
+        li#sco
+          a(href='score.html') My Scores
+        li#dd
+          a(href='#') Daily Diary
+        li
+          a(href='#') Share My Story
+  #tool.row
+    .col-xs-2
+    .col-xs-8
+      .w3-content.w3-display-container(style='transition-delay: 3s')
+        .mySlides.w3-animate-zoom
+          span#prog 1/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:3.3%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I am terrified of being overweight.
+          center
+            ul
+              .options.btn-group#1
+                if manahil
+                  li
+                    button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                else
+                  li
+                    button#1.manahilbtn(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 2/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:6.6%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I avoid eating when I am hungry.
+          center
+            ul
+              .options.btn-group#2
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 3/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:10%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I find myself pre-occupied with food thoughts.
+          center
+            ul
+              .options.btn-group#3
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 4/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:13%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I cut my food into small pieces.
+          center
+            ul
+              .options.btn-group#4
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 5/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:16%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I am aware of the calorie content of the foods that I eat.
+          center
+            ul
+              .options.btn-group#5
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 6/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:20%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p
+            | I particularly avoid food with a high carbohydrate content (bread, rice, potatoes).
+          center
+            ul
+              .options.btn-group#6
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 7/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:23%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I feel that others would prefer if I ate more.
+          center
+            ul
+              .options.btn-group#7
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 8/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:26%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I feel extremely guilty after eating.
+          center
+            ul
+              .options.btn-group#8
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 9/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:30%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I am preoccupied with a desire to be thinner. 
+          center
+            ul
+              .options.btn-group#9
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 10/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:33%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I think about burning up calories when I exercise.
+          center
+            ul
+              .options.btn-group#10
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 11/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:36%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p Other people think that I am too thin.
+          center
+            ul
+              .options.btn-group#11
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 12/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:40%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I am preoccupied with the thought of having fat on my body. 
+          center
+            ul
+              .options.btn-group#12
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 13/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:43%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I avoid foods with sugar in them. 
+          center
+            ul
+              .options.btn-group#13
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 14/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:46%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I eat diet foods.
+          center
+            ul
+              .options.btn-group#14
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 15/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:50%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I display self control around food.
+          center
+            ul
+              .options.btn-group#15
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 16/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:53%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I feel that others pressure me to eat.
+          center
+            ul
+              .options.btn-group#16
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 17/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:56%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I feel uncomfortable after eating sweets. 
+          center
+            ul
+              .options.btn-group#17
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 18/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:60%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I engage in dieting behaviour.
+          center
+            ul
+              .options.btn-group#18
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 19/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:63%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I like my stomach to be empty.
+          center
+            ul
+              .options.btn-group#19
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 20/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:66%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I have exercised more than 60 minutes a day to lose or to control my weight. 
+          center
+            ul
+              .options.btn-group#20
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 21/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:70%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I enjoy trying new rich foods.
+          center
+            ul
+              .options.btn-group#21
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 22/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:70%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p I enjoy trying new rich foods.
+          center
+            ul
+              .options.btn-group#22
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 23/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:76%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p Have you noticed the shape of other women and felt that your own shape compared unfavourably?
+          center
+            ul
+              .options.btn-group#23
+                if progress
+                  li
+                    button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                else
+                  li
+                    button#1.btn.btn-danger(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 24/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:80%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p Has being naked, such as when taking a bath, made you feel fat?
+          center
+            ul
+              .options.btn-group#24
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 25/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:83%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p
+            | Have you not gone out to social occasions (e.g. parties) because you have felt bad about your shape?
+          center
+            ul
+              .options.btn-group#25
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 26/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:86%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p
+            | Have you worried about other people seeing rolls of fat around your waist or stomach?
+          center
+            ul
+              .options.btn-group#26
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 27/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:90%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p
+            | When in company have your worried about taking up too much room (e.g. sitting on a sofa, or a bus seat)?
+          center
+            ul
+              .options.btn-group#27
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 28/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:93%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p Have you pinched areas of your body to see how much fat there is?
+          center
+            ul
+              .options.btn-group#28
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 29/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:96%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p
+            | Have you avoided situations where people could see your body (e.g. communal changing rooms or swimming baths)?
+          center
+            ul
+              .options.btn-group#29
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .mySlides.w3-animate-right
+          span#prog 30/30
+          center
+            .progress
+              #fill.progress-bar(role='progressbar' style='width:100%' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100')
+          p Have you lost 14 pounds or more in the past 3 months?
+          center
+            ul
+              .options.btn-group#30
+                li
+                  button#1.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Always
+                li
+                  button#2.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Usually
+                li
+                  button#3.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Often
+                li
+                  button#4.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Sometimes
+                li
+                  button#5.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Rarely
+                li
+                  button#6.btn.btn-primary(type='button' onclick='plusDivs(1,this.parentNode.parentNode.id,this.id)') Never
+        .row
+          button#slide1.btn.btn-primary.btn-md(type='button' onclick='plusDivs(-1)') Previous
+          button#slide2.btn.btn-primary.btn-md(type='button' style='margin-right:6px;') Save and Exit
+  footer#warning.myfooter
+    .col-xs-1.col-xs-offset-1
+      img(src='image/warn.png' style='margin-left:20px;')
+    .col-xs-9(style='padding-left:0px')
+      | This test has been designed for self-assessment purposes only. It does not diagonse. Kindly take it as an assessment tool only to know about your eating behavior and refer to a consultant if advised to do so.
+script(src='https://code.jquery.com/jquery-3.1.0.js' integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js' integrity='sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb' crossorigin='anonymous')
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js' integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn' crossorigin='anonymous')
+script.
+  var slideIndex = 1;
+  showDivs(slideIndex);
+  var answers = {};
+  function plusDivs(n,name,id) {
+    answers[name]=id;
+    setTimeout(()=>{
+      showDivs(slideIndex += n);
+    },100)
+  }
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {return}
+    if (n >= 1) {
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    } else
+      slideIndex = 1;
+  }
+  function saveAndExit(){
+   console.log(answers);
+  }
+script(type='text/javascript').
+  $(document).ready(function(){
+  var 
+  $("#example-one").append("<li id='magic-line'></li>");
+  /* Cache it */
+  var $magicLine = $("#magic-line");
+  $magicLine
+  .width($(".current_page_item").width())
+  .css("left", $(".current_page_item a").position().left)
+  .data("origLeft", $magicLine.position().left)
+  .data("origWidth", $magicLine.width());
+  $("#example-one li").find("a").hover(function() {
+  $el = $(this);
+  leftPos = $el.position().left;
+  newWidth = $el.parent().width();
+  $magicLine.stop().animate({
+  left: leftPos,
+  width: newWidth
+  });
+  }, function() {
+  $magicLine.stop().animate({
+  left: $magicLine.data("origLeft"),
+  width: $magicLine.data("origWidth")
+  });
+  });
+  $(function(){
+  $('.title').click(function(){
+  window.location='index.html'
+  });
+  });
+    $(function(){
+      $('#slide2').click(function(){
+        $.post("http://localhost:3000/saveResults",answers).done(function(msg){
+          window.location='toolEnd.html'
+        }).fail(function(xhr,status,error){
+          alert('Saving results failed, please try again')
+        });
+      });
+    });
+  })

@@ -825,14 +825,19 @@ font-weight: bold;
   margin-right: 20px;
 }
 
-#options .btn{
+.options .btn{
   background-color:transparent;
   border:solid 2px #f0f0f0;
   color:black;
 
 }
+.options .manahilbtn{
+  background-color:transparent;
+  border:solid 2px #c21f2b;
+  color:black;
 
-#options .btn:hover{
+}
+.options .btn:hover{
   background-color: #ff7a01;
   color:white;
   border: solid 1px white;

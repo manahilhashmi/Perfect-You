@@ -37,7 +37,6 @@ UserProvider.prototype.findByUsername = function (username,password,callback) {
 UserProvider.prototype.findById = function (id,callback){
     collection = db.get('testUsers');
     collection.findOne({_id:id}).then(user=>{
-        console.log(user);
         callback(null,user);
     }).catch(err=>{
         console.log(err);
@@ -65,5 +64,30 @@ UserProvider.prototype.saveUser = function (user,callback){
     }).catch(err=>{
         callback(new Error(JSON.stringify(err)));
     });
+}
+
+UserProvider.prototype.saveResults = function(userid,data,callback){
+	collection = db.get('testUsers');
+	collection.findOne({_id:userid}).then(user=>{
+		if(!user.results)
+			user.results = data;
+		else
+			user.results = Object.assign({},user.results,data);
+		collection.update({_id:userid},user).then(results=>{
+			callback();
+		}).catch(err=>{
+			callback(err);
+		});
+	}).catch(err=>{
+		callback(err);
+	});
+}
+UserProvider.prototype.geAll = function(callback){
+	collection = db.get('testUsers');
+	collection.find().then(docs=>{
+		callback(docs);
+	}).catch(err=>{
+		callback(err);
+	});
 }
 module.exports = UserProvider;

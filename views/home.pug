@@ -26,7 +26,7 @@ html
 				.col-sm-3
 				#topNav.col-sm-6
 					.col-xs-4
-					.col-xs-3(style='color:black') #{user.username}
+					.col-xs-3(style='color:black') #{user.username} 
 					.col-sm-3
 						button#logbutton.btn.btn-primary.btn-md(type='button')  Log Out
 			.nav-wrap
@@ -45,13 +45,13 @@ html
 			.row
 				.col-xs-2
 				#notifs.col-xs-4
-					if user.progress
+					if progress
 						|You have completed 
-						span.bigger #{user.progress} 
-						| of the eating test
+						span.bigger #{progress}%
+						|  of the eating test
 						center
 							.progress
-								#diarybar.progress-bar(role='progressbar', style='width: #{user.progress} %;', aria-valuenow=user.progress, aria-valuemin='0', aria-valuemax='100')
+								#diarybar.progress-bar(role='progressbar', style='width: '+progress+'%')
 					else
 						| You have not started the eating test yet
 						span.bigger
